@@ -88,8 +88,8 @@ if __name__ == "__main__":
     print("--- Демонстрация Задачи 1: Контрастирование ---")
     
     try:
-        low_contrast_img = cv2.imread('test.jpg') 
-        low_contarst_color_img = cv2.imread('test.jpg')
+        low_contrast_img = cv2.imread('images/task_1.jpg') 
+        low_contarst_color_img = cv2.imread('images/task_1.jpg')
         if low_contrast_img is None or low_contarst_color_img is None:
             raise FileNotFoundError
     except (FileNotFoundError, NameError):
@@ -135,7 +135,7 @@ if __name__ == "__main__":
     print("\n--- Демонстрация Задачи 2: Нелинейные фильтры ---")
 
     try:
-        color_img_noisy = cv2.imread('noise_2.jpg')
+        color_img_noisy = cv2.imread('images/noise_2.jpg')
         if color_img_noisy is None:
             raise FileNotFoundError(f"Не удалось загрузить изображение")
     except FileNotFoundError as e:
